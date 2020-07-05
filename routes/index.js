@@ -5,6 +5,6 @@ const dataController = require('../controller');
 /* POST */
 router.post('/', dataController.addData);
 router.get('/', dataController.getAllData);
-router.delete('/', dataController.deleteData);
+router.delete('/:id', dataController.deleteData);
 
 module.exports = router;

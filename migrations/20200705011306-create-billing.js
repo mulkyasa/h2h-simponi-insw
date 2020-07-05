@@ -1,6 +1,6 @@
 'use strict';
 
-const { sequelize } = require("../models");
+const { sequelize } = require('../models');
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
@@ -8,182 +8,179 @@ module.exports = {
       id: {
         allowNull: false,
         autoIncrement: true,
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
       },
       KD_BILLING: {
         allowNull: false,
-        primaryKey: true,
-        type: Sequelize.INTEGER,
-        unique: true
+        type: Sequelize.STRING,
       },
       NTPN: {
         type: Sequelize.STRING,
-        unique: true
       },
       NPWP: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
       },
       TRX_TGL_KONTRAK: {
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
       },
       TRX_KMDT_JUAL: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
       },
       TRX_MTD_BYR: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
       },
       TRX_TGL_KAPAL: {
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
       },
       TRX_KURS_BI: {
-        type: Sequelize.FLOAT
+        type: Sequelize.FLOAT,
       },
       KN_TONASE: {
-        type: Sequelize.FLOAT
+        type: Sequelize.FLOAT,
       },
       KN_ASAL: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
       },
       KN_UNIT_MASS: {
-        type: Sequelize.FLOAT
+        type: Sequelize.FLOAT,
       },
       KL_KALORI: {
-        type: Sequelize.FLOAT
+        type: Sequelize.FLOAT,
       },
       KL_MOIS_TOT: {
-        type: Sequelize.FLOAT
+        type: Sequelize.FLOAT,
       },
       KL_MOIS_INH: {
-        type: Sequelize.FLOAT
+        type: Sequelize.FLOAT,
       },
       KL_SULF_TOT: {
-        type: Sequelize.FLOAT
+        type: Sequelize.FLOAT,
       },
       KL_ASH: {
-        type: Sequelize.FLOAT
+        type: Sequelize.FLOAT,
       },
       BP_TTK_JUAL: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
       },
       BPBG_UKR_TGK: {
-        type: Sequelize.FLOAT
+        type: Sequelize.FLOAT,
       },
       BPBG_JT_TGK: {
-        type: Sequelize.FLOAT
+        type: Sequelize.FLOAT,
       },
       BPBG_BIAYA_TOT: {
-        type: Sequelize.FLOAT
+        type: Sequelize.FLOAT,
       },
       BPTR_BIAYA_TR: {
-        type: Sequelize.FLOAT
+        type: Sequelize.FLOAT,
       },
       BPTR_BIAYA_TOT: {
-        type: Sequelize.FLOAT
+        type: Sequelize.FLOAT,
       },
       BPTR_BIAYA_TOTHIT: {
-        type: Sequelize.FLOAT
+        type: Sequelize.FLOAT,
       },
       DP_STATUS: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
       },
       DP_PEMBELI: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
       },
       DPLK_PLB_ASL: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
       },
       DPLK_PLB_AKH: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
       },
       DPKV_NAMA: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
       },
       DPKT_BENDERA: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
       },
       DPKT_NAMA: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
       },
       DPTB_BENDERA: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
       },
       DPTB_NAMA: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
       },
       DRHA_KMDT_JUAL: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
       },
       DRHA_ACUAN: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
       },
       DRHA_NILAI: {
-        type: Sequelize.FLOAT
+        type: Sequelize.FLOAT,
       },
       DRPR_HRG_ACU: {
-        type: Sequelize.FLOAT
+        type: Sequelize.FLOAT,
       },
       DRPR_BP_TOT: {
-        type: Sequelize.FLOAT
+        type: Sequelize.FLOAT,
       },
       DRPR_HD_RYL: {
-        type: Sequelize.FLOAT
+        type: Sequelize.FLOAT,
       },
       DRPR_HJ_PERUSH: {
-        type: Sequelize.FLOAT
+        type: Sequelize.FLOAT,
       },
       DRPR_TARIF: {
-        type: Sequelize.FLOAT
+        type: Sequelize.FLOAT,
       },
       DRPR_RYL_TOT: {
-        type: Sequelize.FLOAT
+        type: Sequelize.FLOAT,
       },
       DRPR_RP_BYR: {
-        type: Sequelize.FLOAT
+        type: Sequelize.FLOAT,
       },
       DRPR_PHT_BYR: {
-        type: Sequelize.FLOAT
+        type: Sequelize.FLOAT,
       },
       DRPR_RYLFIN_HIT: {
-        type: Sequelize.FLOAT
+        type: Sequelize.FLOAT,
       },
       DRPR_PHTFIN_HIT: {
-        type: Sequelize.FLOAT
+        type: Sequelize.FLOAT,
       },
       DRPR_DENDA: {
-        type: Sequelize.FLOAT
+        type: Sequelize.FLOAT,
       },
       DRPR_DENDA_PHT: {
-        type: Sequelize.FLOAT
+        type: Sequelize.FLOAT,
       },
       DRPR_RYLFIN_TOT: {
-        type: Sequelize.FLOAT
+        type: Sequelize.FLOAT,
       },
       DRPR_PHTFIN_TOT: {
-        type: Sequelize.FLOAT
+        type: Sequelize.FLOAT,
       },
       DRPR_KET: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
       },
       DRPR_KURLEB: {
-        type: Sequelize.FLOAT
+        type: Sequelize.FLOAT,
       },
       DRPR_TGLSUBMIT: {
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
       },
       DRPR_NMPERUSH: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
       },
       createdAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
       },
       updatedAt: {
         allowNull: false,
-        type: Sequelize.DATE
-      }
+        type: Sequelize.DATE,
+      },
     });
   },
   down: async (queryInterface, Sequelize) => {
     await queryInterface.dropTable('Billings');
-  }
+  },
 };
