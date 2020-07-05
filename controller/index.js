@@ -3,7 +3,7 @@ const { Billing } = require('../models');
 const addData = (req, res) => {
   let [KD_BILLING, NTPN] = JSON.parse(req.body.data);
   try {
-    Billing.findAll({ where: { KD_BILLING, NTPN } }).then((result) => {
+    Billing.findByPk({ where: { KD_BILLING, NTPN } }).then((result) => {
       if (result) {
         res.status(409).json({
           simponi_result: {
